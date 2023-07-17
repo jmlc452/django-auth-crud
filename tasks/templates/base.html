@@ -8,34 +8,34 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Organiza Tareas</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">home</a>
+                    <a class="nav-link" href="/">Inicio</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/tasks">tasks pending</a>
+                    <a class="nav-link" href="/tasks">Tareas pendientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tasks_completed">tasks completed</a>
+                    <a class="nav-link" href="/tasks_completed">Tareas completadas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/tasks/create">create task</a>
+                    <a class="nav-link" href="/tasks/create">Crear tarea</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">logout</a>
+                    <a class="nav-link" href="/logout">Salir</a>
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link" href="/signup">signup</a>
+                    <a class="nav-link" href="/signup">Entrar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/signin">signin</a>
+                    <a class="nav-link" href="/signin">Registrarse</a>
                 </li>
                 {% endif %}
             </ul>
